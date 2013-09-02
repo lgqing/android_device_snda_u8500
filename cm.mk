@@ -1,0 +1,18 @@
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/cm/config/gsm.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := u8500
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/snda.com/u8500/device_u8500.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := u8500
+PRODUCT_NAME := s1w_u8500
+PRODUCT_BRAND := Bambookphone
+PRODUCT_MODEL := Bambook S1
+PRODUCT_MANUFACTURER := snda.com
