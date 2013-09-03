@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/snda.com/u8500/u8500-vendor.mk)
+$(call inherit-product-if-exists, vendor/snda/u8500/u8500-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/snda.com/u8500/overlay
+DEVICE_PACKAGE_OVERLAYS += device/snda/u8500/overlay
 
-LOCAL_PATH := device/snda.com/u8500
+LOCAL_PATH := device/snda/u8500
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -16,9 +16,9 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    device/snda.com/u8500/ueventd.goldfish.rc:root/ueventd.goldfish.rc \
-    device/snda.com/u8500/ueventd.rc:root/ueventd.rc \
-    device/snda.com/u8500/ueventd.st-ericsson.rc:root/ueventd.st-ericsson.rc
+    device/snda/u8500/ueventd.goldfish.rc:root/ueventd.goldfish.rc \
+    device/snda/u8500/ueventd.rc:root/ueventd.rc \
+    device/snda/u8500/ueventd.st-ericsson.rc:root/ueventd.st-ericsson.rc
 
 $(call inherit-product, build/target/product/full.mk)
 

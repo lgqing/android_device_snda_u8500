@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/snda.com/u8500/BoardConfigVendor.mk
+-include vendor/snda/u8500/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -25,7 +25,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x14500000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x45600000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/snda.com/u8500/kernel
-TARGET_RECOVERY_INITRC := device/snda.com/u8500/recovery.rc
+TARGET_PREBUILT_KERNEL := device/snda/u8500/kernel
+TARGET_RECOVERY_INITRC := device/snda/u8500/recovery.rc
 
 BOARD_HAS_NO_SELECT_BUTTON := true

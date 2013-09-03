@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := u8500
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/snda.com/u8500/device_u8500.mk)
+$(call inherit-product, device/snda/u8500/device_u8500.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := u8500
